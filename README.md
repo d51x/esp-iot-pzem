@@ -1,4 +1,4 @@
-# esp-iot-home
+# esp-iot-pzem
 
 # Как собрать проект?
 
