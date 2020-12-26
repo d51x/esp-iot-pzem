@@ -151,11 +151,20 @@ extern void sntp_start();
     #endif    
 
 
+<<<<<<< HEAD
     #ifdef CONFIG_LED_CONTROLLER
     ledcontrol_channel_t *ch_red;
     ledcontrol_channel_t *ch_green;
     ledcontrol_channel_t *ch_blue;
     ledcontrol_channel_t *ch_white;
+=======
+     #ifdef CONFIG_LED_CONTROLLER
+     #define LED_CHANNELS_COUNT CONFIG_LED_CHANNELS_COUNT
+     #if LED_CHANNELS_COUNT > 0 
+     ledcontrol_channel_t *ch[LED_CHANNELS_COUNT];
+     #endif
+
+>>>>>>> iot-home/main
     ledcontrol_t *ledc_h;
     ledcontrol_t *ledc;
 
@@ -166,7 +175,11 @@ extern void sntp_start();
                 effects_t* effects;
             #endif    
         #endif
+<<<<<<< HEAD
     #endif
+=======
+     #endif
+>>>>>>> iot-home/main
 
 extern void sntp_start();
 
